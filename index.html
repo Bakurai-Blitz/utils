@@ -26,7 +26,7 @@
       
       text-align: center;
       background-color: rgba( 100, 55, 255, 0.3);
-      padding: 0.5rem ;
+      padding: 1rem ;
       width: 80%; 
       max-width: 300px;
       border-radius: 20px;
@@ -52,16 +52,27 @@
     }
     
     .block{
+      opacity: 1;
       background-color: rgba(255,255,255,0.09);
        cursor: pointer;
       border-radius: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 2rem;
+      padding: 2rem 2rem 2rem 2rem;
       transition: 0.2s ease; 
+      animation: comein linear forwards;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100% ;
     }
-      
+    /*  cover is how much part the object covered on the vh and entry means how much part of the object is visible */
+    
+      @keyframes comein {
+        0% {  opacity: 0;}
+        40%,75% {  opacity: 1;}
+        100% {  opacity: 0;}
+          
+      }
     .block:hover {
       scale: 1.1;
       box-shadow: 0 0 10px white;
@@ -87,7 +98,7 @@
 </style>
 </head>
 <body style="background-image: linear-gradient(to bottom right , rgb(1, 19, 71),
-rgb(21, 10, 82) ); padding-bottom: 20px">
+rgb(21, 10, 82) ); padding-bottom: 15vh">
    <div class="fuckone">
      Utilities
    </div>
