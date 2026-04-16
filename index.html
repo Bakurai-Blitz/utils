@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities</title>
+    
+    
+    
+<style> 
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* font-family: Monospace; */ 
+     font-family: sans-serif;
+      -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+   }
+
+    .fuckone {
+      
+      color: white;
+      font-size: 3rem;
+      margin: 30px auto;
+      
+      text-align: center;
+      background-color: rgba( 100, 55, 255, 0.3);
+      padding: 0.5rem ;
+      width: 80%; 
+      max-width: 300px;
+      border-radius: 30px;
+      transition: 0.5s;
+      box-shadow: 0 0 10px rgba( 100, 55, 255, 0.6) ;
+      outline: 1px solid black;
+}
+    
+    
+    .fuckone:hover{
+     scale: 1.05;
+    
+     
+    }
+    .fucktwice {
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(140px, 1fr));
+      grid-template-rows: auto;
+      gap: 15px;
+      margin: 0 auto; 
+      width: 90%;
+      max-width: 1000px;
+    }
+    
+    .block{
+      background-color: rgba(255,255,255,0.09);
+       cursor: pointer;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      transition: 0.2s ease; 
+    }
+      
+    .block:hover {
+      scale: 1.1;
+      box-shadow: 0 0 10px white;
+      z-index: 20;
+    }
+    
+    .block:active {
+      scale: 0.8;
+      z-index: 20;
+    }
+    
+    .block h1 {
+      font-size: 1.2rem;
+      word-wrap: break-word;
+      text-align: center;
+      color: white;
+      outline: none;
+
+    }
+  
+      
+    
+</style>
+</head>
+<body style="background-image: linear-gradient(to bottom right , rgb(1, 19, 71),
+rgb(21, 10, 82) ); padding-bottom: 20px">
+   <div class="fuckone">
+     Utilities
+   </div>
+   <main class="fucktwice">
+       <div class="block" onclick="openlink('https://anilab.to/')">
+  <h1>Anilab</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://onstream.so')">
+  <h1>OnStream</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/OuterTune/OuterTune')">
+  <h1>OuterTune</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/fast4x/RiPlay?tab=readme-ov-file')">
+  <h1>RiPlay</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/libre-tube/LibreTube/releases')">
+  <h1>LibreTube</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/TeamNewPipe/NewPipe/releases')">
+  <h1>NewPipe</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://mixplorer.com')">
+  <h1>MiXplorer</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/rikkaapps/shizuku')">
+  <h1>Shizuku</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/legendsayantan/ShizuTools')">
+  <h1>ShizuTools</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/termux/termux-app/releases')">
+  <h1>Termux</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/anfreire/updateMe-Mobile/releases')">
+  <h1>UpdateMe</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/revanced/revanced-manager/releases')">
+  <h1>Revanced</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/inotia00/revanced-manager/releases')">
+  <h1>ReVanced Extended</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/revanced/gmscore/releases')">
+  <h1>MicroG</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/samolego/Canta/releases')">
+  <h1>Canta</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/ImranR98/Obtainium/releases')">
+  <h1>Obtainium</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/deniscerri/ytdlnis/releases')">
+  <h1>YTDLnis</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/deadlyjack/Acode/releases')">
+  <h1>Acode</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver')">
+  <h1>ZArchiver</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://play.google.com/store/apps/details?id=org.malwarebytes.antimalware')">
+  <h1>Malwarebytes</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://protonvpn.com/download')">
+  <h1>Proton VPN</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://www.VirusTotal.com')">
+  <h1>VirusTotal</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/T8RIN/ImageToolbox/releases')">
+  <h1>Image Toolbox</h1> 
+</div>
+
+     </main>
+<script> 
+ function openlink(url) {
+  setTimeout(() => {
+    window.open(url, '_blank');
+  }, 300);
+}
+</script>
+
+   
+</body>
+</html>
