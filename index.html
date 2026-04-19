@@ -28,7 +28,7 @@
       padding: 1rem ;
       width: 80%; 
       max-width: 300px;
-      border-radius: 20px;
+      border-radius: 100px;
       transition: 0.5s;
       box-shadow: 0 0 10px rgba( 100, 55, 255, 0.4) ;
       outline: 1px solid black;
@@ -42,7 +42,7 @@
     }
     .fucktwice {
       display: grid;
-      grid-template-columns: repeat( auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
       grid-template-rows: auto;
       gap: 15px;
       margin: 0 auto; 
@@ -58,7 +58,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 2rem 2rem 2rem 2rem;
+      padding: 2rem;
       transition: 0.2s ease; 
       animation: comein linear forwards;
       animation-timeline: view();
@@ -68,7 +68,7 @@
     
       @keyframes comein {
         0% {  opacity: 0;}
-        25%,75% {  opacity: 1;}
+        20%, 90% {  opacity: 1;}
         100% {  opacity: 0;}
           
       }
@@ -97,7 +97,7 @@
 </style>
 </head>
 <body style="background-image:linear-gradient(in lch to right , rgb(1, 19, 71),
-rgb(21, 10, 82) ); padding-bottom: 15vh">
+rgb(0, 30, 100), rgb(1, 19, 71) ); padding-bottom: 15vh">
    <div class="fuckone">
      Utilities
    </div>
@@ -109,6 +109,11 @@ rgb(21, 10, 82) ); padding-bottom: 15vh">
 <div class="block" onclick="openlink('https://onstreamapks.app/')">
   <h1>OnStream</h1> 
 </div>
+
+<div class="block" onclick="openlink('https://play.google.com/store/apps/details?id=com.ttee.leeplayer')">
+  <h1>S Player</h1> 
+</div>
+
 
 <div class="block" onclick="openlink('https://github.com/OuterTune/OuterTune/releases')">
   <h1>OuterTune</h1> 
@@ -168,6 +173,14 @@ rgb(21, 10, 82) ); padding-bottom: 15vh">
 
 <div class="block" onclick="openlink('https://github.com/deniscerri/ytdlnis/releases')">
   <h1>YTDLnis</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://github.com/JunkFood02/Seal/releases')">
+  <h1>Seal</h1> 
+</div>
+
+<div class="block" onclick="openlink('https://play.google.com/store/apps/details?id=idm.internet.download.manager')">
+  <h1>1DM</h1> 
 </div>
 
 <div class="block" onclick="openlink('https://github.com/deadlyjack/Acode/releases')">
