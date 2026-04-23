@@ -21,25 +21,19 @@
     .fuckone {
       
       color: white;
-      font-size: 1.5rem;
-      margin: 30px auto;
+      font-size: 2rem;
+      margin: 30px auto 20px auto;
       text-align: center;
-      background-color: rgba( 100, 55, 255, 0.3);
-      padding: 1rem ;
-      width: 80%; 
+      width: 70%; 
       max-width: 300px;
-      border-radius: 100px;
       transition: 0.5s;
-      box-shadow: 0 0 10px rgba( 100, 55, 255, 0.4) ;
-      outline: 1px solid black;
+    Font-family: monospace;
+Font-weight: bold;
+  
 }
     
     
-    .fuckone:hover{
-     scale: 1.05;
-    
-     
-    }
+
     .fucktwice {
       display: grid;
       grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
@@ -49,7 +43,35 @@
       width: 90%;
       max-width: 1000px;
     }
-    
+
+#searchBar {
+  display: block;
+  margin: 10px auto 25px auto;
+  width: 85%;
+  max-width: 600px;
+  padding: 1.1rem 1rem;
+  border-radius: 10px;
+  
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: white;
+ border: none;
+transition: 0.3s all; 
+
+}
+
+#searchBar::placeholder {
+  color: rgba(255,255,255,0.5);
+  font-family: sans-serif;
+}
+  
+#searchBar:focus {
+ Box-shadow: 0 1px 2px white;
+ width: 90%;
+ 
+  
+}  
     .block{
       opacity: 0;
       background-color: rgba(255,255,255,0.09);
@@ -63,6 +85,7 @@
       animation: comein linear forwards;
       animation-timeline: view();
       animation-range: cover 0% cover 100% ;
+ 
     }
     /*  cover is how much part the object covered on the vh and entry means how much part of the object is visible */
     
@@ -75,7 +98,8 @@
     .block:hover {
       scale: 1.1;
       box-shadow: 0 0 10px white;
-      z-index: 20;
+      z-index: 2;
+ 
     }
     
     .block:active {
@@ -101,6 +125,9 @@ rgb(0, 30, 100), rgb(1, 19, 71) ); padding-bottom: 15vh">
    <div class="fuckone">
      Utilities
    </div>
+
+   <input type="text" id="searchBar" placeholder="Search apps..." /> 
+
    <main class="fucktwice">
        <div class="block" onclick="openlink('https://anilab.to/')">
   <h1>Anilab</h1> 
@@ -226,6 +253,25 @@ rgb(0, 30, 100), rgb(1, 19, 71) ); padding-bottom: 15vh">
     window.open(url, '_blank');
   }, 300);
 }
+
+const searchBar = document.getElementById('searchBar');
+const blocks = document.querySelectorAll('.block');
+
+searchBar.addEventListener('input', () => {
+  const value = searchBar.value.toLowerCase();
+
+  blocks.forEach(block => {
+    const text = block.innerText.toLowerCase();
+
+    if (text.includes(value)) {
+      block.style.display = "flex";
+    } else {
+      block.style.display = "none";
+    }
+  });
+});
+
+
 </script>
 
    
