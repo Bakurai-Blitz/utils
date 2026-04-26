@@ -15,8 +15,18 @@
      /* font-family: Monospace; */ 
      font-family: sans-serif;
       -webkit-tap-highlight-color: transparent;
-        -webkit-user-select: none;
+    
    }
+   
+
+.block h1::selection {
+    background: none; 
+}
+
+
+.block h1::-moz-selection {
+    background: none;
+}
 
     .fuckone {
       
@@ -162,12 +172,22 @@ rgb(0, 30, 100), rgb(1, 19, 71) ); padding-bottom: 15vh">
   <h1>MiXplorer</h1> 
 </div>
 
+<div class="block" onclick="openlink('https://github.com/DP-Hridayan/aShellYou/releases')">
+  <h1>aShell You</h1> 
+</div>
+
+
 <div class="block" onclick="openlink('https://github.com/rikkaapps/shizuku/releases/')">
   <h1>Shizuku</h1> 
 </div>
 
 <div class="block" onclick="openlink('https://github.com/legendsayantan/ShizuTools/releases/')">
   <h1>ShizuTools</h1> 
+</div>
+
+
+<div class="block" onclick="openlink('https://github.com/JackEblan/Geto/releases')">
+  <h1>Geto</h1> 
 </div>
 
 <div class="block" onclick="openlink('https://github.com/termux/termux-app/releases')">
@@ -245,6 +265,11 @@ rgb(0, 30, 100), rgb(1, 19, 71) ); padding-bottom: 15vh">
 <div class="block" onclick="openlink('https://github.com/localsend/localsend/releases')">
   <h1>LocalSend</h1> 
 </div>
+
+<div class="block" onclick="openlink('https://auroraoss.com/files/')">
+  <h1>Aurora Store</h1> 
+</div>
+
 
      </main>
 <script> 
